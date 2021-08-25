@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { icons } from 'assets/icons';
-import Icon from './Icon';
+import { Icon } from './Icon';
 
 const Meta = styled.div`
   color: #666;
