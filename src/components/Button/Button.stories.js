@@ -29,7 +29,7 @@ export const ButtonWithLeadingIcon = Template.bind({});
 ButtonWithLeadingIcon.args = {
   label: 'Button',
   size: 'medium',
-  leadingIcon: <Icon icon="plus" />,
+  leadingIcon: <Icon icon="search" />,
 };
 
 ButtonWithLeadingIcon.storyName = 'Button with leading icon';
