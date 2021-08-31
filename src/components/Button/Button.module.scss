@@ -1,0 +1,103 @@
+.button {
+  // remove default button styles
+  display: inline-block;
+  border: 1px solid transparent;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  min-height: 2.25rem;
+  min-width: 2.25rem;
+  line-height: 1;
+  padding: 0.4375rem 1rem;
+  border-radius: 0.25rem;
+  background: white;
+  color: #202223;
+  border: 1px solid #bbbfc3;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+
+  &:hover {
+  }
+
+  &:focus {
+    outline: 2px solid #458fff;
+    outline-offset: 2px;
+  }
+
+  &:active {
+  }
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+    transition: none;
+    box-shadow: none;
+    //     border-color: var(--p-border-disabled);
+    // background: var(--p-surface-disabled);
+    // color: var(--p-text-disabled);
+  }
+}
+
+.button_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_text {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.button_leadingIcon {
+  margin-right: 4px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.button___small {
+  padding: 3px 12px;
+  min-height: 28px;
+}
+
+.button___medium {
+  padding: 0.4375rem 1rem;
+  min-height: 2.25rem;
+  min-width: 2.25rem;
+}
+
+.button___large {
+  padding: 11px 24px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+:where(.button___small, .button___medium, .button___large).button___icon {
+  padding: 0;
+}
+
+.button___plain {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-height: 0;
+
+  .button_content {
+    font-weight: 400;
+  }
+}
+
+.button___outline {
+  background: transparent;
+  box-shadow: none;
+}
